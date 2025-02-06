@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
-public class TemplateTP1 {
+public class BurhanPedia{
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -20,5 +20,29 @@ public class TemplateTP1 {
         System.out.println("=============================================================");
         System.out.println("============== Selamat datang di Burhanpedia! ===============");
         System.out.println("=============================================================");
+        
+        UserInput();
     }
+
+    public static void UserInput(){
+        Scanner inpStokAwal = new Scanner(System.in);
+        System.out.print("Masukkan stok awal: ");
+        String valStokAwal = inpStokAwal.nextLine();
+
+
+        Scanner inpHargaBarang = new Scanner(System.in);
+        System.out.print("Masukkan harga barang: ");
+        String valHargaBarang = inpHargaBarang.nextLine();
+
+        Scanner inpSaldoAwal = new Scanner(System.in);
+        System.out.print("Masukkan saldo awal: ");
+        String valSaldoAwal = inpSaldoAwal.nextLine();
+
+
+        
+
+    }
+
+
+
 }
