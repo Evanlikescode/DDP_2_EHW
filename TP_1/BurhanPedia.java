@@ -21,25 +21,29 @@ public class BurhanPedia{
         System.out.println("============== Selamat datang di Burhanpedia! ===============");
         System.out.println("=============================================================");
         
-        UserInput();
-    }
+        try{
+            Scanner inpStokAwal = new Scanner(System.in);
+            System.out.print("Masukkan stok awal: ");
+            Integer valStokAwal = inpStokAwal.nextInt();
+    
+            Scanner inpHargaBarang = new Scanner(System.in);
+            System.out.print("Masukkan harga barang: ");
+            Integer valHargaBarang = inpHargaBarang.nextInt();
+    
+            Scanner inpSaldoAwal = new Scanner(System.in);
+            System.out.print("Masukkan saldo awal: ");
+            Integer valSaldoAwal = inpSaldoAwal.nextInt();
 
-    public static void UserInput(){
-        Scanner inpStokAwal = new Scanner(System.in);
-        System.out.print("Masukkan stok awal: ");
-        String valStokAwal = inpStokAwal.nextLine();
+            System.out.print('\n');
+            System.out.print("Pilih menu \n");
+            System.out.print("1. Penjual \n");
+            System.out.print("2. Pembeli \n");
+            System.out.print("3. Hari Selanjutnya \n");
+            System.out.print("4. Keluar \n");
 
-
-        Scanner inpHargaBarang = new Scanner(System.in);
-        System.out.print("Masukkan harga barang: ");
-        String valHargaBarang = inpHargaBarang.nextLine();
-
-        Scanner inpSaldoAwal = new Scanner(System.in);
-        System.out.print("Masukkan saldo awal: ");
-        String valSaldoAwal = inpSaldoAwal.nextLine();
-
-
-        
+        }catch(Exception e){
+            System.out.println("Please check your input once again ");
+        }
 
     }
 
